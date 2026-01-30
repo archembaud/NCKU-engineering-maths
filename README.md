@@ -57,7 +57,7 @@ The analytical solution to this can be found using the 2nd shifting theorem (or 
 s^2X(s) + X(s) = (\frac{1}{s})(e^{-s} - e^{-5s})
 ```
 
-which as the solution:
+which has the solution for X(s):
 
 ```math
 X(s) = \frac{e^{-s}}{s(s^2+1)} - \frac{e^{-5s}}{s(s^2+1)}
