@@ -113,3 +113,36 @@ y(x)=\sum_{n=0}^{\infin} \frac{(-1)^n}{(2n)!}x^{2n}
 We can run the code (found [here](./Series_Solution_A/Series_Solution_A.m)) to see what happens as we increase the number of terms in the series - we can see that as n increases, the power series looks more and more like cos(x) - the known solution.
 
 ![Series_A](./Series_Solution_A/Series_Solution_A.png)
+
+## Series Solutions to ODEs - Example B - Airy's Equations
+
+Airy's equation can be written as:
+
+```math
+y'' - xy = 0
+```
+and are described in some detail in Wikipedia [here](https://en.wikipedia.org/wiki/Airy_function).
+
+The numerical solution can be obtained by assuming a power series solution, which is far simpler than using (for instance) Laplace transforms in this case. The value of each term, and the total sum, can be shown to be computed as follows:
+
+```matlab
+function [sum] = term1(no_terms, x)
+    % This function computes the first possible solution of Airy's eqns
+    sum = 1; % This solution starts with 1
+    % Set a0 = 1
+    a0 = 1;
+    % Now we need to compute each term in the series at point x
+    % The first term was 1; we start at term n = 1 and larger
+    numerator = 1;
+    for term = 1:1:no_terms
+        numerator = numerator*(3*term).*(3*term - 1);
+        sum = sum + x.^(3*term)./numerator;
+    end
+    % Multiply by a0 (even though its 1 in this case)
+    sum = sum*a0;
+end
+```
+
+The graph of the solution for increasing numbers of terms is:
+
+![AirySolution](./Series_Solution_B/Series_Solution_B.png)
