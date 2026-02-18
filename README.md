@@ -85,3 +85,31 @@ We can check our answer using Simulink. The model for Simulink is shown below, a
 ![Time Shift](./Laplace_Time_Shift/Laplace_Time_Shift.png)
 
 The comparison of the analytical solution is shown next to the result from simulink - again, showing that Simulink is a useful tool for quickly checking your analytical solutions.
+
+
+## Series Solutions to ODEs - Example A
+
+This example shows how we can apply a power series to solve the ODE:
+
+
+```math
+y'' + y = 0
+```
+
+The general solution to this ODE is already well known - it takes the form:
+
+```math
+y(x) = A.cos(x) + B.sin(x)
+```
+
+where the values of A and B depend on the initial conditions of the ODE.
+
+In the case where the value of A is 1, and B is 0 (i.e. y(0) = 1 and y'(0) = 0) the series solution can be shown to be:
+
+
+```math
+y(x)=\sum_{n=0}^{\infin} \frac{(-1)^n}{(2n)!}x^{2n}
+```
+We can run the code (found [here](./Series_Solution_A/Series_Solution_A.m)) to see what happens as we increase the number of terms in the series - we can see that as n increases, the power series looks more and more like cos(x) - the known solution.
+
+![Series_A](./Series_Solution_A/Series_Solution_A.png)
