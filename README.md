@@ -1,6 +1,11 @@
 # NCKU-engineering-maths
 A collection of tools and docs to support the NCKU class on engineering mathematics.
 
+## Homework / Demonstrations
+
+You can find the *Cantilever Homework Problem* solution [here](./Homework/Cantilever_Demo/Solution.md).
+
+
 ## Euler's Method Example
 
 Here we solve the ODE:
