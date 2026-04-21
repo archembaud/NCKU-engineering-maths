@@ -13,7 +13,5 @@ function [solution] = Compute_Series_A(x,N, a0, a1)
         sum1 = sum1 + term1;
         sum2 = sum2 + term2;
     end
-    sum1 = sum1*a0;
-    sum2 = sum2*a1;
-    solution = sum1 + sum2;
+    solution = a0*sum1 + a1*sum2;
 end

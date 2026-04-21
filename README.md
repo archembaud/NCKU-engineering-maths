@@ -5,6 +5,11 @@ A collection of tools and docs to support the NCKU class on engineering mathemat
 
 You can find the *Cantilever Homework Problem* solution [here](./Homework/Cantilever_Demo/Solution.md).
 
+## Series Solutions Examples
+
+Therer are several examples showing how we use series solutions in this repository.
+* For solution of a simple ODE using series solutions: [here](./Series_ODE_Demo_A/README.md).
+
 
 ## Euler's Method Example
 
