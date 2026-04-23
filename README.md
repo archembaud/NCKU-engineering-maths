@@ -9,7 +9,7 @@ You can find the *Cantilever Homework Problem* solution [here](./Homework/Cantil
 
 Therer are several examples showing how we use series solutions in this repository.
 * For solution of a simple ODE using series solutions: [here](./Series_ODE_Demo_A/README.md).
-
+* Another solution to a simple ODE using series solutions [here](./Series_ODE_Demo_B/README.md).
 
 ## Euler's Method Example
 
